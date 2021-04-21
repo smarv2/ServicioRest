@@ -1,3 +1,5 @@
+package com.mx.digitalstone.restservice;
+
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,11 +15,11 @@ import javax.ws.rs.QueryParam;
  *
  * @author smarv
  */
-@Path("saludo")
-public class saludo {
+@Path("multiplicacion")
+public class multiplicacion {
     @GET
-    public String oeprar(@QueryParam("nombre") String nombre, @QueryParam("apellido") String apellido){
-    return "Hola " + nombre + " " + apellido + ".";
+    public String oeprar(@QueryParam("num1") int n1, @QueryParam("num2") int n2){
+    return String.valueOf(n1 * n2);
     }
     
 }

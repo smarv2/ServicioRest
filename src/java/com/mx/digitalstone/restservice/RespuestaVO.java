@@ -1,3 +1,5 @@
+package com.mx.digitalstone.restservice;
+
 
 import java.io.Serializable;
 
