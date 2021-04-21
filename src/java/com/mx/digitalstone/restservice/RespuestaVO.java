@@ -2,6 +2,7 @@ package com.mx.digitalstone.restservice;
 
 
 import java.io.Serializable;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -13,6 +14,7 @@ import java.io.Serializable;
  *
  * @author smarv
  */
+@XmlRootElement //Requerido para regresar en XML
 public class RespuestaVO implements Serializable {
     private String nombreCompleto;
     private int edad;

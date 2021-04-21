@@ -16,8 +16,8 @@ import javax.ws.rs.core.MediaType;
  *
  * @author smarv
  */
-@Path("datosGET")
-public class datosGET {
+@Path("datosGETJSON")
+public class datosGETJSON {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON) //indica el tipo de dato que va a regresar si no se indica regresa un JSON
